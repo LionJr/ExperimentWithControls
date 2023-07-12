@@ -24,5 +24,13 @@ namespace ExperimentWithControls
         {
             InitializeComponent();
         }
+        private void numberTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            number.Text = numberTextBox.Text;
+        }
+        private void numberTextBox_PreviewText(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !int.TryParse(e.Text, out int result);
+        }
     }
 }
