@@ -54,5 +54,7 @@
         <ListBoxItem Content="5"/>
     </ComboBox>
 
+    <Slider x:Name="smallSlider" Minimum="0" Maximum="5" Value="1" Grid.Column="0" Grid.Row="2" Margin="10,10,0,0" ValueChanged="smallSlider_ValueChanged"/>
+    <Slider x:Name="bigSlider" Minimum="0" Maximum="100"  Value="1" Grid.ColumnSpan="2" Grid.Row="2" Margin="10,45,10,10" ValueChanged="bigSlider_ValueChanged"/>
     </Grid>
 </Window>

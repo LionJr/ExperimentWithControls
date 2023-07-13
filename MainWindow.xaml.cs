@@ -63,5 +63,13 @@ namespace ExperimentWithControls
                 number.Text = comboBox.Text;
             }
         }
+        private void smallSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = smallSlider.Value.ToString("0");
+        }
+        private void bigSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            number.Text = bigSlider.Value.ToString("0");
+        }
     }
 }
